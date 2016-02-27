@@ -6,10 +6,11 @@
     margin: 0;
 }
 
-div {
+.colored {
     background-color: mediumpurple;
     border: 1px solid black;
-    position: relative;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
 }
 
 h1 {
@@ -20,21 +21,21 @@ h1 {
 
 section {
     background-color: purple;
-    position: absolute;
-    right: 0px;
+    float: right;
     width: 100px;
     text-align: center;
+    margin-bottom: 5px;
 }
+
+article {}
 
 p {
     width: 90%;
     height: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     font-family: Helvetica;
-    color: white;
-    position: ;
-    clear: both;
+    color: black;
+    clear: right;
 }
 
 
@@ -42,6 +43,7 @@ p {
 
 .row {
     width: 100%;
+    position: absolute;
 }
 
 
@@ -61,7 +63,6 @@ p {
     .col-md-6,
     .col-md-12 {
         float: left;
-        border: 1px solid green;
     }
     .col-md-6 {
         width: 50%;
@@ -77,7 +78,6 @@ p {
 @media (max-width: 767px) {
     .col-sm-12 {
         float: left;
-        border: 1px solid green;
         width: 100%;
     }
 }
